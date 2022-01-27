@@ -14,6 +14,7 @@ const InputField = ({ todo, setTodo, handleAdd }: Props) => {
     return (
         <form className="input" onSubmit={(event) => {
                 handleAdd(event)
+                // This gets rid of the page shadow
                 inputRef.current?.blur();
             }}>
             <input 
