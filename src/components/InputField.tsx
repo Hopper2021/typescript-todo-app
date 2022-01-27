@@ -1,12 +1,20 @@
 import React from 'react';
-import styles from './styles.css'
+import './styles.css'
  
 const InputField = () => {
     return (
-        <div>
-            <input type="input" placeholder="Enter a task" className="taskInput"></input>
-            <button className="goButton">Go</button>
-        </div>
+        <form className="input">
+            <input 
+                type="input" 
+                placeholder="Enter a task" 
+                className="taskInput">
+            </input>
+            <button 
+                type="submit" 
+                className="goButton">
+                    Go
+            </button>
+        </form>
     )
 }
 
